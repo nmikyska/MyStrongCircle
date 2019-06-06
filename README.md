@@ -1,0 +1,2 @@
+# MyStrongCircle
+developing on SquareSpace
