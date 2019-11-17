@@ -1,2 +1,2 @@
 # MyStrongCircle
-developing on SquareSpace
+This site was originally a SquareSpace site using their Bedford Template. Recently the client wished to update the site to better reflect how the upcoming platform is going to look. Given the constraints of her current host...it was decided to move her site to Flywheel and redesign the site with WordPress using Divi. The site's purpose is to drive interested fitness gym owners and fitness gym users to sign up to be notified when the platform is to be launched sometime in late Jan 2020.  
