@@ -1,0 +1,184 @@
+/*
+ Theme Name: MyStrongCircle Child Theme
+ Theme URI: http://www.nmikyska.com
+ Description: Child theme for MyStrongCircle
+ Author: Nancy Mikyska
+ Author URI: http://www.cymaticswebdevelopment.com
+ Template: Divi
+ Version: 1.0.0
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/*This bit calms down firefox & safari to display the header of the home page & contact us page; they apparently don't like the mix-blending going on...Christian van 't Hof, my absolute rockstar fellow dev helped me with this...look him up over on facebook. */
+.page-id-8 #background1, .page-id-8 #background1:hover, .page-id-692 #background2, .page-id-692 #background2:hover {
+	mix-blend-mode: normal!important;
+	}
+	/*takes the annoying line and box-shadow off the navigation bar*/
+	#main-header{
+		box-shadow: none !important;
+		-webkit-box-shadow: none !important;
+	}
+	#footer-info{
+		width: 100% !important;
+		margin: 0 auto !important;
+		text-align: center !important;
+	}
+	.et_pb_button:hover:after, .et_pb_more_button:hover:after, .et_pb_newsletter_button:hover:after, .et_pb_pricing_table_button:hover:after, .et_pb_promo_button:hover:after {
+			margin-left: 0;
+			opacity: 0 !important;
+	}
+	.single-post> #page-container > #et-main-area > #main-content>.container{
+			width: 100%;
+			max-width: 100%;
+	}
+	section#comment-wrap{
+			width: 80%;
+			margin: 0 auto;
+	}
+	
+	/*divi overlay custom css*/
+	#customButton .et_pb_newsletter_button {
+			border-radius: 30px;
+			color: #ffffff;
+	}
+	#customButton .et_pb_newsletter_button:hover {
+			background-color: #ffffff;
+			color: rgba(12,113,195,0.8);
+			border-color: rgba(12,113,195,0.73);
+	}
+	.et_pb_newsletter_form .et_pb_newsletter_fields p.et_pb_signup_custom_field_0 .input, .et_pb_newsletter_form .et_pb_newsletter_fields p.et_pb_signup_custom_field_0 .input[type="checkbox"]+label i, .et_pb_newsletter_form .et_pb_newsletter_fields p.et_pb_signup_custom_field_0 .input[type="radio"]+label i {
+			border-radius:30px !important;
+			overflow: hidden !important;
+	}
+	
+	/*mobile menu dropdown styling*/
+	#mobile_menu{
+			width: 50%;
+		 margin-left: 50vw;    
+	}
+	#mobile_menu>li{
+			text-align: center;    
+	}
+	span.mobile_menu_bar, .mobile_menu_bar_toggle::before{
+			color: #e65c00 !important;
+	}
+	.et_mobile_menu{
+			border-color: #e65c00 !important;
+	}
+	.et_mobile_menu li a{
+			color: #e65c00 !important;
+			font-size: 18px;
+			line-height: 0.7em;
+	}
+	/*blog comment form styling*/
+	form#commentform .logged-in-as{
+			display: none;
+	}
+	section#comment-wrap .commentlist{
+			display: none;
+	}
+	
+	/*custom contact form on contact page*/
+	#responsive-form{
+			max-width:600px ;
+		margin:0 auto;
+			width:100%;
+	}
+	#responsive-form label{
+			color: #ffffff;
+	}
+	.form-row{
+		width: 100%;
+	}
+	.column-half{
+		float: left;
+		position: relative;
+		padding: 0.65rem;
+		width:50%;
+		-webkit-box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					box-sizing: border-box
+	}
+	.column-full{
+			float: left;
+		position: relative;
+		padding: 0.65rem;
+		width:100%;
+		-webkit-box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					box-sizing: border-box
+	}
+	.clearfix:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea {
+			width: 100%;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		-webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+					box-sizing: border-box
+	}
+	.wpcf7 input[type="text"]:focus{
+		background: #fff;
+	}
+	.wpcf7-submit{
+			font-size: 16px;
+		float: right;
+		background-color: rgba(0,0,0,0);
+		color: #fff;
+		text-transform: uppercase;
+		border: 2px solid #ffffff;
+			border-radius: 30px;
+		padding: 12px 20px;
+		cursor: pointer;
+	}
+	.wpcf7-submit:hover{
+		background: #e65c00;
+	}
+	span.wpcf7-not-valid-tip{
+		text-shadow: none;
+		font-size: 16px;
+		text-align: center;
+		color: #fff;
+		background: #ff0000;
+		padding: 5px;
+		margin-bottom: 4px;
+	}
+	div.wpcf7-validation-errors { 
+		text-shadow: none;
+		border: transparent;
+		background: #ff0000;
+		padding: 5px;
+		color: #ffffff;
+		text-align: center;
+		margin: 0;
+		font-size: 16px;
+	}
+	div.wpcf7-mail-sent-ok{
+		text-align: center;
+		text-shadow: none;
+		padding: 5px;
+		font-size: 16px;
+		background: #59a80f;
+		border-color: #59a80f;
+		color: #fff;
+		margin: 0;
+	}
+	
+	/**---------------- Media query ----------------**/
+	@media only screen and (max-width: 48em) { 
+		.column-half{
+			width: 100%;
+		}
+	}
+	@media(min-width:981px){
+		#main-header.et-fixed-header{
+		box-shadow: none !important;
+		-webkit-box-shadow: none !important;
+		}
+	} 
+	
